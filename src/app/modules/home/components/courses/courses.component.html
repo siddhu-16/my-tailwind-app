@@ -1,0 +1,47 @@
+<div id="course" class="mx-1 pb-20">
+  <div class="md:mt-12 ">
+    <div class="flex justify-center">
+      <span class="font-semibold text-4xl mt-4">Courses that We Offer...</span>
+      
+    </div>
+    <p class="mt-4 mx-4 text-slate-500 text-lg">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt neque
+        expedita totam labore dolorem dignissimos dolores rerum, earum
+        repellendus inventore iusto quam non aliquid harum repudiandae eligendi
+        minus reiciendis consequatur.
+    </p>
+    <div class="flex justify-center flex-wrap gap-4 w-screen mt-16">
+
+        <div class="flex flex-col min-w-52 min-h-44 items-center justify-center bg-gray-100  border border-gray-400 hover:scale-110" >
+            <img src="./assets/avtar.svg" alt="" class="w-24 h-24 md:w-16 md:h-16">
+            <div class=" flex flex-col items-start mt-3 cursor-pointer">
+                <span *ngFor="let name of UiCourses" class="hover:text-primary text-[12px] md:text-[16px] font-semibold " >
+                    <i class="fa-solid fa-check"></i>
+                    {{name}}
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-col min-w-52 min-h-44 items-center justify-center bg-gray-100  border border-gray-400 hover:scale-110" >
+            <img src="./assets/avtar.svg" alt="" class="w-24 h-24 md:w-16 md:h-16">
+            <div class=" flex flex-col items-start mt-3 cursor-pointer">
+                <span *ngFor="let name of backend" class="hover:text-primary text-[12px] md:text-[16px] font-semibold" >
+                    <i class="fa-solid fa-check"></i>
+                    {{name}}
+                </span>
+            </div>
+            
+        </div>
+        <div class="flex flex-col min-w-52 min-h-44 items-center justify-center bg-gray-100  border border-gray-400 hover:scale-110" >
+            <img src="./assets/avtar.svg" alt="" class="w-24 h-24 md:w-16 md:h-16">
+            <div class=" flex flex-col items-start mt-3 cursor-pointer">
+                <span *ngFor="let name of other" class="text-[12px] md:text-[16px] font-semibold hover:text-primary" >
+                    <i class="fa-solid fa-check"></i>
+                    {{name}}
+                </span>
+            </div>
+            
+        </div>  
+        
+    </div>  
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="nav">
+    <nav class="p-3 flex bg-white justify-between items-center ">
+        <a href="" class="flex gap-4 items-center flex-1">
+            <img class="object-cover max-w-12 max-h-12" src="./assets/cartoon.svg" alt="logo" >
+            <span class="font-medium font-display hover:text-primary">MySite</span>
+        </a>
+        <div class="hidden md:flex gap-4">
+            <a routerLink=""  class="font-medium hover:text-primary">Home</a>
+            <a class="font-medium hover:text-primary">Docs</a>
+            <a class="font-medium hover:text-primary">ChangeLog</a>
+            <a class="font-medium hover:text-primary">Blog</a>
+            <a routerLink="login" class="font-medium hover:text-primary">Login</a>
+        </div>
+        <div class="hidden gap-3 md:flex flex-1 justify-end">
+            <button class=" items-center border border-gray-200 px-6 py-2 rounded-md hover:border-gray-950">
+                <span>Electron developers </span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>  
+
+        
+        <button class="p-2 md:hidden" (click)="getClick()">
+            <i class="fa-solid fa-bars" ></i>
+        </button>
+
+        <div *ngIf="isLogged" class="fixed z-10 md:hidden bg-white inset-0 p-3 ">
+            <div id="nav-bar" class="flex justify-between ">
+                <a href="" class="flex gap-2 items-center ">
+                    <img class="object-cover max-w-12 max-h-12" src="./assets/cartoon.svg" alt="logo" >
+                    <span class="font-medium font-display hover:text-primary">MySite</span>
+                </a>
+
+                <button class="p-2 md:hidden" (click)="getClick()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                
+            </div>
+            <div class="mt-6">
+                <a href="" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Home</a>
+                <a href="" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Docs</a>
+                <a href="" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">ChangeLog</a>
+                <a href="" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Blog</a>
+                <a routerLink="login" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Login</a>
+            </div>
+
+            <div class="h-[1px] bg-gray-300"></div>
+
+            <button class=" mt-6 flex w-full gap-2 items-center  px-6 py-2 rounded-md hover:bg-gray-100 ">
+                <span>Electron developers</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        
+    </nav>  
+</div>
